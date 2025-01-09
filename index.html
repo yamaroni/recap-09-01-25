@@ -5,10 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Yama</title>
+
+    <!-- Internal CSS -->
+    <style>
+        header {
+            background-color: blue;
+        }
+
+        .main-header {
+            background-color: green;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header>
+        <h1>Title</h1>
+    </header>
 
+    <main>
+        <header class="main-header">
+            <h2>Title</h2>
+        </header>
+
+        <header class="main-header" id="unique-main-header">
+            <h2>Title</h2>
+        </header>
+
+        <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+    </main>
+
+    <!-- Inline CSS -->
+    <footer style="background-color: red;">
+        <span>Footer</span>
+    </footer>
 </body>
 
 </html>
